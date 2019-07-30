@@ -17,13 +17,13 @@
        let phut=parseFloat(prompt("Nhap so phut vao day"));
        let cuoc;
        if(phut<=50 && phut>0) {
-           cuoc=phut*600;
+           cuoc=phut*600+25000;
            alert("Cuoc dien thoai la " + cuoc + " VND");
        }else if(phut<=200 && phut >0) {
-           cuoc=(phut-50)*400+(50*600);
+           cuoc=(phut-50)*400+(50*600)+25000;
            alert("Cuoc dien thoai la "+ cuoc + " VND");
        }else if(phut>200) {
-           cuoc=(phut-200)*200+(50*600)+(150*400);
+           cuoc=(phut-200)*200+(50*600)+(150*400)+25000;
            alert("Cuoc dien thoai la "+cuoc+" VND");
        } else {
            alert("Ban nhap sai vui long nhap lai");
