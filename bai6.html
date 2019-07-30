@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 5% nếu tổng doanh số nhỏ hơn hoặc bằng 100 triệu.
+          10% nếu tổng doanh số nhỏ hơn hoặc bằng 300 triệu.
+          20 % nếu tổng doanh số là lớn hơn 300 triệu.*/
+          let ds=parseFloat(prompt("Nhap tong doanh so","VND"));
+          let a=parseFloat((ds/100)*5);
+          let b=parseFloat((ds/100)*10);
+          let c=parseFloat((ds/100)*20);
+          if(ds<=100000000 && ds>0) {
+              alert("Hoa hong la 5% = "+ a + " VND");
+          }else if(ds<=300000000 && ds>100000000) {
+              alert("Hoa hong la 10% = "+ b +" VND");
+          }else {
+              alert("Hoa hong la 20% = "+c+ " VND");
+          }
+        </script>
+</body>
+</html>

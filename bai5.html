@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=parseFloat(prompt("Nhap Diem Kiem Tra"));
+        let b=parseFloat(prompt("Nhap Diem Thi Giua Ky"));
+        let c=parseFloat(prompt("Nhap Diem Thi Cuoi Ky"));
+        let d=parseFloat((a+(b*2)+(c*3))/6);
+        if(d>=8) {
+            alert("Loai A");
+        } else if(d >= 6.5 && d<80) {
+            alert("Loai B");
+        } else if (d >= 5 && d < 6.5) {
+            alert ("Loai C");
+        } else if (d >= 3.5 && d < 5) {
+            alert(" Loai D");
+        } else {
+            alert("Loai F");
+        }
+        
+        </script>
+</body>
+</html>
